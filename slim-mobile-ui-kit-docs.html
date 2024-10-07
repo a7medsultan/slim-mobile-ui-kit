@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="slim-mobile-ui-kit.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Slim Mobile UI Kit</h1>
+    <p>An AI Generated UI Kit for mobile apps</p>
+    <div id="content" class="card">
+      <h2>Table of Contents</h2>
+      <ul>
+        <li>
+          <a href="#introduction">Introduction</a>
+        </li>
+        <li>
+          <a href="#getting-started">Getting Started</a>
+        </li>
+        <li><a href="#components">Components</a>
+          <ul>
+            <li><a href="#typography">Typography</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#forms">Forms</a></li>
+            <li><a href="#cards">Cards</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#navigation-bar">Navigation Bar</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#utility-classes">Utility Classes</a>
+        </li>
+        <li>
+          <a href="#grid-system">Grid System</a>
+        </li>
+        <li>
+          <a href="#rtl-support">RTL Support</a>
+        </li>
+        <li>
+          <a href="#customization">Customization</a>
+        </li>
+        <li>
+          <a href="#browser-support">Browser Support</a>
+        </li>
+      </ul>
+
+    </div>
+
+
+    <div id="introduction" class="card">
+      <h3>
+        1. Introduction
+      </h3>
+      <p>The Slim Mobile UI Kit is a lightweight CSS framework designed for building mobile-friendly web applications.
+        It provides a set of essential components and utilities with a clean, modern look that's suitable for mobile
+        interfaces. The kit also includes support for Right-to-Left (RTL) layouts, making it versatile for global
+        applications.</p>
+    </div>
+    <div id="getting-started" class="card">
+      <h3>2. Getting Started</h3>
+      <p>
+        To use the Slim Mobile UI Kit in your project:
+      </p>
+      <ol>
+        <li>Download the `slim-mobile-ui.css` file.</li>
+        <li>
+          Link the CSS file in your HTML:
+
+          ```html
+          <link rel="stylesheet" href="path/to/slim-mobile-ui.css">
+          ```
+        </li>
+        <li>Start using the classes in your HTML markup.</li>
+      </ol>
+    </div>
+
+    <div id="components" class="card">
+      <h3>3. Components</h3>
+      <div id="typography" class="card">
+        <h4>3.1 Typography</h4>
+        <p>The kit provides basic styling for headings (h1 through h6). Example:</p>
+        <pre>
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+        </pre>
+      </div>
+      <div id="buttons" class="card">
+        <h4>3.2 Buttons</h4>
+        <p>Two button styles are available: default and secondary.</p>
+        <pre>
+          <button class="btn">Default Button</button>
+          <button class="btn btn-secondary">Secondary Button</button>
+        </pre>
+      </div>
+      <div id="forms" class="card">
+        <h4>3.3 Forms</h4>
+        <p>Basic form styling is included. Wrap form elements in `.form-group` for consistent spacing.</p>
+        <pre>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Enter text">
+          </div>
+        </pre>
+      </div>
+      <div id="cards" class="card">
+        <h4>3.4 Cards</h4>
+        <p>Cards provide a flexible container for grouped content.</p>
+        <pre>
+          <div class="card">
+            <h2>Card Title</h2>
+            <p>Card content goes here.</p>
+          </div>
+        </pre>
+      </div>
+      <div id="lists" class="card">
+        <h4>3.5 Lists</h4>
+        <p>Use the `.list` class for unstyled lists, and `.list-item` for individual list items.</p>
+        <pre>
+          <ul class="list">
+            <li class="list-item">List item 1</li>
+            <li class="list-item">List item 2</li>
+          </ul>
+        </pre>
+      </div>
+      <div id="navigation-bar" class="card">
+        <h4>3.6 Navigation Bar</h4>
+        <p>A simple navigation bar is included.</p>
+        <pre>
+          <nav class="navbar">
+            <a href="#" class="navbar-brand">My App</a>
+          </nav>
+        </pre>
+      </div>
+
+    </div>
+    <div id="utility-classes" class="card">
+      <h4>4. Utility Classes</h4>
+      <p>The kit includes several utility classes for common styling needs:</p>
+      <pre>
+        - `.text-center`: Center-align text
+        - `.mt-1`, `.mt-2`: Add top margin
+        - `.mb-1`, `.mb-2`: Add bottom margin
+        - `.ml-1`, `.ml-2`, `.mr-1`, `.mr-2`: Add left or right margin (with RTL support)
+      </pre>
+    </div>
+    <div id="grid-system" class="card">
+      <h4>5. Grid System</h4>
+      <p>A simple flexbox-based grid system is included:</p>
+      <pre>
+        <div class="container">
+          <div class="row">
+            <div class="col">Column 1</div>
+            <div class="col">Column 2</div>
+          </div>
+        </div>
+      </pre>
+    </div>
+    <div id="rtl-support" class="card">
+      <h4>6. RTL Support</h4>
+      <p>To enable RTL layout, add the `dir="rtl"` attribute to your `<html>` or `
+
+        <body>` tag:</p>
+      <pre>
+        <html dir="rtl">
+      <!-- Your content here -->
+
+      </html>
+      </pre>
+      <p>The kit automatically adjusts layouts, text alignment, and margins for RTL languages.</p>
+    </div>
+
+    <div id="customization" class="card">
+      <h4>7. Customization</h4>
+      <p>To customize the UI kit, modify the CSS variables at the top of the `slim-mobile-ui.css` file. This allows you
+        to easily change colors, fonts, and other properties throughout the kit.</p>
+
+    </div>
+
+    <div id="browser-support" class="card">
+      <h4>8. Browser Support</h4>
+      <p>The Slim Mobile UI Kit is designed to work with modern browsers that support CSS3. It has been tested on the
+        latest versions of Chrome, Firefox, Safari, and Edge.</p>
+      <p>For more detailed examples and advanced usage, please refer to the source code comments in the
+        `slim-mobile-ui.css` file.</p>
+
+    </div>
+
+
+  </div>
+</body>
+
+</html>
